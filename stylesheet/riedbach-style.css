@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-family: "Comic Sans MS", sans-serif;
+}
+
+body {
+    background: #85924A;
+}
+
+main {
+    width: 1588px;
+}
+
+nav {
+    width: 100%;
+    background: #407338;
+    height: 150px
+}
+
+ul {
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+}
+
+li {
+    list-style-type: none;
+    width: 16%;
+}
+
+.titleRiedbach {
+    height: 100px;
+    background: #85924A;
+    width: 60%;
+}
+
+.titleRiedbach p {
+    font-size: 10px;
+}
+
+.logo {
+    align-items: center;
+    width: 36%;
+}
+
+.imageLogo {
+    width: 10%
+}
