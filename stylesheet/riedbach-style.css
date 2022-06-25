@@ -1,3 +1,5 @@
+/* Default Settings*/
+
 * {
     margin: 0;
     padding: 0;
@@ -11,13 +13,11 @@ body {
     background: #85924A;
 }
 
-.landingpage {
-    background-image: url("/assets/Landing-Wallpaper.jpg");
-}
-
 main {
     width: auto
 }
+
+/* Navigator Component*/
 
 nav {
     width: 100%;
@@ -25,37 +25,43 @@ nav {
     height: 100px
 }
 
-ul {
+.navbar-content {
     height: 100px;
     display: flex;
     flex-direction: row;
 }
 
-li {
+.navbar-content .nav-links {
     list-style-type: none;
-}
-
-.nav-url-box {
-    text-align: center;
     width: 16%;
-    padding-top: 3.25%;
+    display: flex;
+    justify-content: center;
+    position: center;
 }
 
-.navbar-links {
-    margin-top: 20px;
+.navbar-content .logo {
+    display: flex;
+    justify-content: center;
+    width: 36%;
+    font-size: 12%;
+}
+
+.navbar-content a {
     text-decoration: none;
     color: white;
+    margin-top: 40px;
 }
 
-.actualPage {
-    text-align: center;
+#actual-Page {
     background: #85924A;
-    width: 16%;
-    padding-top: 3.25%;
+}
+
+.logo h1 img {
+    width: 45px;
+    margin-right: 5px;
 }
 
 .titleRiedbach {
-    width: 60%;
     padding: 5px;
     font-size: 2.3rem;
     font-family: "Comic Sans MS", sans-serif;
@@ -67,25 +73,42 @@ li {
     font-size: 12px;
 }
 
-.logo {
+/*Footer Compoment */
+
+footer {
+    background: #407338;
+    width: 100%;
+    height: 50px;
+    display: flex;
     justify-content: center;
-    width: 36%;
 }
 
-.imageLogo {
-    width: 12%;
-    margin-right: 3px;
+footer p {
+    margin-top: 12px;
+    color: white;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Index.html Settings (landing-page)*/
+
+#landing-wallpaper {
+    background-image: url("../assets/Landing-Wallpaper.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .landing-content {
-
+    display: flex;
+    justify-content: center;
+    padding: 15%
 }
 
 .landing-content-box {
-    position: absolute;
-    left: 25%;
-    top: 30%;
-    width: 50%;
+    width: 70%;
     background: rgba(15, 15, 15, 75%);
     color: white;
     padding: 10px;
@@ -97,18 +120,12 @@ li {
     text-align: center;
 }
 
-footer {
-    background: #407338;
-    width: 100%;
-    height: 50px;
-
-}
-
-.landing_footer {
-    align-items: center;
+#landing_footer {
     position: absolute;
     bottom: 0;
 }
+
+
 
 .sightseeing-contents {
     display: flex;
