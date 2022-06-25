@@ -101,7 +101,25 @@ footer {
     background: #407338;
     width: 100%;
     height: 50px;
-    align-content: center;
+
+}
+
+.landing_footer {
+    align-items: center;
     position: absolute;
     bottom: 0;
+}
+
+.sightseeing-contents {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin-left: 5%
+}
+
+.sightseeing-contents section {
+    width: 350px;
+    height: 30%;
+    background: #407338;
+    margin: 10px auto;
 }
