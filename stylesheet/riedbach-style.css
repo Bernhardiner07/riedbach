@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-p {
+p, a, h1, h2, h3 {
     font-family: "Comic Sans MS", sans-serif;
 }
 
@@ -11,42 +11,97 @@ body {
     background: #85924A;
 }
 
+.landingpage {
+    background-image: url("/assets/Landing-Wallpaper.jpg");
+}
+
 main {
-    width: 1588px;
+    width: auto
 }
 
 nav {
     width: 100%;
     background: #407338;
-    height: 150px
+    height: 100px
 }
 
 ul {
-    height: 150px;
+    height: 100px;
     display: flex;
     flex-direction: row;
 }
 
 li {
     list-style-type: none;
+}
+
+.nav-url-box {
+    text-align: center;
     width: 16%;
+    padding-top: 3.25%;
+}
+
+.navbar-links {
+    margin-top: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.actualPage {
+    text-align: center;
+    background: #85924A;
+    width: 16%;
+    padding-top: 3.25%;
 }
 
 .titleRiedbach {
-    height: 100px;
-    background: #85924A;
     width: 60%;
+    padding: 5px;
+    font-size: 2.3rem;
+    font-family: "Comic Sans MS", sans-serif;
+    margin: 10px auto auto;
+
 }
 
 .titleRiedbach p {
-    font-size: 10px;
+    font-size: 12px;
 }
 
 .logo {
-    align-items: center;
+    justify-content: center;
     width: 36%;
 }
 
 .imageLogo {
-    width: 10%
+    width: 12%;
+    margin-right: 3px;
+}
+
+.landing-content {
+
+}
+
+.landing-content-box {
+    position: absolute;
+    left: 25%;
+    top: 30%;
+    width: 50%;
+    background: rgba(15, 15, 15, 75%);
+    color: white;
+    padding: 10px;
+}
+
+.landing-content-box h2 {
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+footer {
+    background: #407338;
+    width: 100%;
+    height: 50px;
+    align-content: center;
+    position: absolute;
+    bottom: 0;
 }
