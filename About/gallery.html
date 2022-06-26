@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Riedbach - Galerie</title>
+    <link href="../stylesheet/riedbach-style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body class="gallery-wrapper" onload="getPics()">
+    <header class="gallery-header">
+        <nav>
+            <ul class="navbar-content">
+                <li class="logo">
+                    <h1 class="titleRiedbach">
+                        <img class="imageLogo" src="../assets/R.jpg" alt="Logo">Riedbach<p>Fauna und Flora in der Stadtberner Westen</p>
+                    </h1>
+                </li>
+                <li class="nav-links">
+                    <a href="#">Home</a>
+                </li>
+                <li class="nav-links">
+                    <a href="#">Über Riedbach</a>
+                </li>
+                <li class="nav-links" id="actual-Page">
+                    <a href="#">Galerie</a>
+                </li>
+                <li class="nav-links">
+                    <a href="#">Info/Anreise</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="gallery-main">
+        <div class="gallery-intro">
+            <h2>Über Riedbach</h2>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+                dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+                clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+                sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+                ipsum dolor sit amet.</p>
+        </div>
+        <div class="gallery-image-collection">
+            <img src="https://via.placeholder.com/350x200">
+            <img src="https://via.placeholder.com/350x200">
+            <img src="https://via.placeholder.com/350x200">
+            <img src="https://via.placeholder.com/350x200">
+            <img src="https://via.placeholder.com/350x200">
+            <img src="https://via.placeholder.com/350x200">
+            <img src="https://via.placeholder.com/350x200">
+            <img src="https://via.placeholder.com/350x200">
+            <img src="https://via.placeholder.com/350x200">
+            <img src="https://via.placeholder.com/350x200">
+            <img src="https://via.placeholder.com/350x200">
+            <img src="https://via.placeholder.com/350x200">
+        </div>
+        <div id="fullPage" onClick="this.style.display='none';"></div>
+    </main>
+    <footer class="gallery-footer">
+        <p><a href="#">Impressum</a> | Stadt Bern</p>
+    </footer>
+</body>
+<script src="../Scripts/getFullscreenPic.js"></script>
+</html>
