@@ -248,9 +248,53 @@ footer a {
 /* information.html Settings Desktop*/
 
 .information-wrapper {
-
+    display: grid;
+    grid-template-rows: 100px auto 50px;
 }
 
 .information-header {
+    grid-row: 1/ 1;
+}
 
+.information-main {
+    padding: 5%;
+}
+
+.information-intro {
+    width: 90%;
+    margin-bottom: 20px;
+}
+
+.information-intro h2, p {
+    margin-bottom: 20px
+}
+
+.information-travel-contents {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%
+}
+
+.information-travel-contents section {
+    width: 35%;
+    background: #407338;
+    margin: 0 5%;
+    display: grid;
+    grid-template-rows: 50px 200px auto 100px;
+}
+
+.information-travel-contents img {
+    width: 100%
+}
+
+.information-travel-contents button {
+    width: 90%;
+    height: 80%;
+    margin: 2.5% 5%;
+    font-family: "Comic Sans MS", sans-serif;
+    font-size: 25px;
+    background: #85924A;
+    border: solid #85924A;
+    border-radius: 10px
 }
