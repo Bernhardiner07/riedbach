@@ -5,7 +5,7 @@
     <title>Riedbach - Über</title>
     <link href="../stylesheet/riedbach-style.css" type="text/css" rel="stylesheet"/>
 </head>
-<body class="about-wrapper">
+<body class="about-wrapper" onload="getPics()">
     <header class="about-header">
         <nav>
             <ul class="navbar-content">
@@ -15,16 +15,16 @@
                     </h1>
                 </li>
                 <li class="nav-links" >
-                    <a href="#">Home</a>
+                    <a href="../index.html">Home</a>
                 </li>
                 <li id="actual-Page" class="nav-links">
-                    <a href="#">Über Riedbach</a>
+                    <a href="about.html">Über Riedbach</a>
                 </li>
                 <li class="nav-links">
-                    <a href="#">Galerie</a>
+                    <a href="gallery.html">Galerie</a>
                 </li>
                 <li class="nav-links">
-                    <a href="#">Info/Anreise</a>
+                    <a href="information.html">Info/Anreise</a>
                 </li>
             </ul>
         </nav>
@@ -43,7 +43,7 @@
         <article class="sightseeing-contents">
             <section>
                 <h3>Bahnhof</h3>
-                <img src="https://via.placeholder.com/350x200" alt="Bahnhof Riedbach">
+                <img src="../assets/350x200/Bahnhof-Riedbach.jpg" alt="Bahnhof Riedbach">
                 <p>Lorem ipsum dolor sit amet,
                     consetetur sadipscing elitr, sed
                     diam nonumy eirmod tempor
@@ -54,7 +54,7 @@
             </section>
             <section>
                 <h3>Forst</h3>
-                <img src="https://via.placeholder.com/350x200" alt="Forstwald">
+                <img src="../assets/350x200/Chlyforst.jpg" alt="Chlyforst-Wald">
                 <p>Lorem ipsum dolor sit amet,
                     consetetur sadipscing elitr, sed
                     diam nonumy eirmod tempor
@@ -65,7 +65,7 @@
             </section>
             <section>
                 <h3>Eglis frische Küchenkreuter</h3>
-                <img src="https://via.placeholder.com/350x200" alt="Bahnhof Riedbach">
+                <img src="../assets/350x200/Eglis-Luftansicht.jpg" alt="Kräuterfelder">
                 <p>Lorem ipsum dolor sit amet,
                     consetetur sadipscing elitr, sed
                     diam nonumy eirmod tempor
@@ -76,7 +76,7 @@
             </section>
             <section>
                 <h3>Spielplatz</h3>
-                <img src="https://via.placeholder.com/350x200" alt="Forstwald">
+                <img src="../assets/350x200/Spielplatz-Riedbach.jpg" alt="Alte Metallschaukel">
                 <p>Lorem ipsum dolor sit amet,
                     consetetur sadipscing elitr, sed
                     diam nonumy eirmod tempor
@@ -87,7 +87,7 @@
             </section>
             <section>
                 <h3>Landwirtschaft</h3>
-                <img src="https://via.placeholder.com/350x200" alt="Bahnhof Riedbach">
+                <img src="../assets/350x200/Landwirtschaft-Riedbach.jpg" alt="Bauernfelder mit verschiedene Anbauten">
                 <p>Lorem ipsum dolor sit amet,
                     consetetur sadipscing elitr, sed
                     diam nonumy eirmod tempor
@@ -97,8 +97,8 @@
                     et justo duo dolores et ea rebum. </p>
             </section>
             <section>
-                <h3>Schiessanlage Manneried</h3>
-                <img src="https://via.placeholder.com/350x200" alt="Forstwald">
+                <h3>Schiessstand Mannenried</h3>
+                <img src="../assets/350x200/Schiessstand-Mannenried.jpg" alt="Gebäude eines Schiessstandes">
                 <p>Lorem ipsum dolor sit amet,
                     consetetur sadipscing elitr, sed
                     diam nonumy eirmod tempor
@@ -107,10 +107,13 @@
                     voluptua. At vero eos et accusam
                     et justo duo dolores et ea rebum. </p>
             </section>
+            <div id="fullPage" onclick="this.style.display='none';"></div>
         </article>
+
     </main>
     <footer class="about-footer">
-        <p><a href="#">Impressum</a> | Stadt Bern</p>
+        <p><a href="impressum.html">Impressum</a> | Stadt Bern</p>
     </footer>
 </body>
+<script src="../Scripts/getFullscreenPic.js"></script>
 </html>

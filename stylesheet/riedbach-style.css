@@ -148,7 +148,7 @@ footer a {
 }
 
 .about-intro {
-    width: 90%;
+    width: 100%;
     margin-bottom: 20px;
 }
 
@@ -163,6 +163,7 @@ footer a {
 .sightseeing-contents {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     justify-content: center;
     width: 100%;
     row-gap: 4.7%;
@@ -171,8 +172,8 @@ footer a {
 
 .sightseeing-contents section {
     display: grid;
-    width: 30%;
-    height: 28rem;
+    grid-template-rows: 50px auto auto;
+    width: 350px;
     background: #407338;
     margin: 0 10px 20px 10px;
 }
@@ -180,7 +181,7 @@ footer a {
 .sightseeing-contents section h3 {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin: 10px 0 10px 0;
     grid-row: 1 / 1;
     color: white;
 }
@@ -211,7 +212,7 @@ footer a {
 }
 
 .gallery-intro {
-    width: 90%
+    width: 100%
 }
 
 .gallery-image-collection {
@@ -224,7 +225,7 @@ footer a {
 }
 
 .gallery-image-collection img {
-    width: 30%;
+    width: 350px;
     margin: 0 10px 20px 10px;
 }
 #fullPage {
@@ -281,11 +282,24 @@ footer a {
     background: #407338;
     margin: 0 5%;
     display: grid;
-    grid-template-rows: 50px 200px auto 100px;
+    grid-template-rows: 50px auto auto 100px;
 }
 
-.information-travel-contents img {
+.information-travel-contents h2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 2.5%;
+    color: white;
+}
+
+.information-travel-contents section img {
     width: 100%
+}
+
+.information-travel-contents section p {
+    width: 90%;
+    margin: 2% 5%;
+    color: white;
 }
 
 .information-travel-contents button {
@@ -295,6 +309,6 @@ footer a {
     font-family: "Comic Sans MS", sans-serif;
     font-size: 25px;
     background: #85924A;
-    border: solid #85924A;
+    border: solid;
     border-radius: 10px
 }

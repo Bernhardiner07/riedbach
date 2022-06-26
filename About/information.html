@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Riedbach - Information/Anreise</title>
     <link href="../stylesheet/riedbach-style.css" rel="stylesheet" type="text/css"/>
 </head>
 <body class="information-wrapper">
@@ -15,16 +15,16 @@
                     </h1>
                 </li>
                 <li class="nav-links">
-                    <a href="#">Home</a>
+                    <a href="../index.html">Home</a>
                 </li>
                 <li class="nav-links">
-                    <a href="#">Über Riedbach</a>
+                    <a href="about.html">Über Riedbach</a>
                 </li>
                 <li class="nav-links">
-                    <a href="#">Galerie</a>
+                    <a href="gallery.html">Galerie</a>
                 </li>
                 <li class="nav-links" id="actual-Page">
-                    <a href="#">Info/Anreise</a>
+                    <a href="information.html">Info/Anreise</a>
                 </li>
             </ul>
         </nav>
@@ -49,7 +49,7 @@
                     zur nächste Kreuzung weiter. Bei der nächste Kreuz
                     ung biegen Sie nach rechts. Fahre nun alles gerade
                     aus, bis Sie zu der nächste Bahnschranke sind. </p>
-                <button>Zum Wegweiser</button>
+                <button id="openMaps">Zum Wegweiser</button>
             </section>
             <section>
                 <h2>Mit dem Auto</h2>
@@ -60,12 +60,13 @@
 
                     Alternative:<br>
                     Am Bahnhof das Tram 7 bis Bachmätteli und anschliessend mit dem Bus 32 nach Riedbach Bahnhof </p>
-                <button>Zur SBB Portal</button>
+                <button id="openSBB">Zur SBB Portal</button>
             </section>
         </article>
     </main>
     <footer class="information-footer">
-        <p><a href="#">Impressum</a> | Stadt Bern</p>
+        <p><a href="impressum.html">Impressum</a> | Stadt Bern</p>
     </footer>
 </body>
+<script src="../Scripts/openUrl.js"></script>
 </html>
