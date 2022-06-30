@@ -22,7 +22,10 @@ main {
 nav {
     width: 100%;
     background: #407338;
-    height: 100px
+    height: 100px;
+    position: fixed;
+    top: 0;
+    overflow: hidden
 }
 
 .navbar-content {
@@ -65,8 +68,6 @@ nav {
     background: #85924A;
 }
 
-
-
 .titleRiedbach {
     padding: 5px;
     font-size: 2.3rem;
@@ -99,12 +100,20 @@ footer a {
     color: white;
 }
 
+@media (max-width: 700px) {
+    footer {
+        ;
+    }
+}
+
 /* index.html Settings Desktop */
 
 #landing-wallpaper {
     background-image: url("../assets/Landing-Wallpaper.jpg");
     background-repeat: no-repeat;
+    background-size: cover;
     background-attachment: fixed;
+    display: block;
 }
 
 .landing-content {
@@ -113,11 +122,11 @@ footer a {
 }
 
 .landing-content-box {
-    width: 70%;
+    max-width: 600px;
     background: rgba(15, 15, 15, 75%);
     color: white;
     padding: 10px;
-    margin-top: 16%;
+    margin: 10% 5px 0 5px;
 }
 
 .landing-content-box h2 {
