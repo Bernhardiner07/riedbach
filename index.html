@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <title>Riebach - Home</title>
     <link href="stylesheet/riedbach-style.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
     <body id="landing-wallpaper">
         <header>
             <nav>
-                <ul class="navbar-content">
+                <ul class="navbar-content" id="toggleNavbarContent">
                     <li class="logo">
                         <h1 class="titleRiedbach">
                             <img class="imageLogo" src="assets/R.jpg" alt="Logo">Riedbach<p>Fauna und Flora in der Stadtberner Westen</p>
@@ -26,6 +27,9 @@
                     </li>
                     <li class="nav-links">
                         <a href="About/information.html">Info/Anreise</a>
+                    </li>
+                    <li class="toggler">
+                        <a href="javascript:void(0);" onclick="toggleNavbar()"><i class="fa fa-bars"></i></a>
                     </li>
                 </ul>
             </nav>
@@ -47,4 +51,5 @@
             <p><a href="About/impressum.html">Impressum</a> | Stadt Bern</p>
         </footer>
     </body>
+<script src="Scripts/responsiveNavigator.js"></script>
 </html>
