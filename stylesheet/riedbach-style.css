@@ -36,14 +36,11 @@ nav {
 .navbar-content .nav-links {
     list-style-type: none;
     width: 100%;
-    display: flex;
-    align-content: start;
-    height: auto;
-    position: center
+    padding: 20px
 }
 
 .navbar-content .logo {
-    width: 90%
+    width: 80%
 }
 
 .logo h1 img {
@@ -60,7 +57,7 @@ nav {
     color: white;
 }
 
-.navbar-content li:not(:first-child) {
+.navbar-content li:not(:first-child, :last-child) {
     display: none;
 }
 
@@ -69,33 +66,45 @@ nav {
 }
 
 .titleRiedbach {
-    padding: 5px;
+    padding-top: 10px;
+    padding-left: 10px;
     font-size: 40px;
     font-family: "Comic Sans MS", sans-serif;
 }
 
 .titleRiedbach p {
     font-size: 12px;
+    margin-bottom: 16px
 }
 
 .navbar-content li.toggler {
-    float: right;
-    display: block;
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    height: auto;
+    width: 20%;
+    position: absolute;
+    top: 12px;
+    right: 0;
+    padding-left: 20px
+}
+
+.toggler a {
+    align-items: center;
 }
 
 .navbar-content.responsive {
     position: relative;
 }
 
-.navbar-content.response li {
+.navbar-content.responsive li {
     float: none;
     display: block;
 }
 
 .navbar-content.responsive li.toggler {
-    position: absolute;
-    right: 0;
-    top: 0
+    display: flex;
+    justify-content: center;
 }
 
 /*Footer Compoment */
@@ -106,8 +115,6 @@ footer {
     height: 50px;
     display: flex;
     justify-content: center;
-    position: absolute;
-    bottom: 0;
 }
 
 footer p {
@@ -131,11 +138,13 @@ footer a {
         height: 100px
     }
 
-    .navbar-content .nav-links {
+    .navbar-content li.nav-links {
+        PADDING: 0;
         width: 16%;
+        height: 100px;
         display: flex;
         justify-content: center;
-        position: center;
+        align-items: center;
     }
 
     .navbar-content .logo {
@@ -144,21 +153,9 @@ footer a {
         width: 36%;
     }
 
-    .navbar-content li:not(:last-child) {
-        display: block;
-    }
-
     .logo h1 img {
         width: 45px;
         margin-right: 5px;
-    }
-
-    .navbar-content a {
-        margin-top: 40px;
-    }
-
-    .titleRiedbach {
-        margin: 10px auto auto;
     }
 
     .navbar-content li.toggler {
@@ -179,6 +176,7 @@ footer a {
 .landing-content {
     display: flex;
     justify-content: center;
+    position: center;
 }
 
 .landing-content-box {
@@ -186,7 +184,13 @@ footer a {
     background: rgba(15, 15, 15, 75%);
     color: white;
     padding: 10px;
-    margin: 16% 5px 0 5px;
+    margin: 40% 5px 0 5px;
+}
+
+#landing_footer {
+    position: fixed;
+    bottom: 0;
+    overflow: hidden;
 }
 
 .landing-content-box h2 {
@@ -195,9 +199,10 @@ footer a {
     text-align: center;
 }
 
-#landing_footer {
-    position: absolute;
-    bottom: 0;
+@media (min-width: 800px) {
+    .landing-content-box {
+        margin: 16% 5px 0 5px
+    }
 }
 
 /* about.html Settings Desktop */
@@ -231,18 +236,18 @@ footer a {
 
 .sightseeing-contents {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: center;
+    row-gap: 4.5%;
     width: 100%;
-    row-gap: 4.7%;
     margin-top: 20px
 }
 
 .sightseeing-contents section {
     display: grid;
     grid-template-rows: 50px auto auto;
-    width: 350px;
+    min-width: 350px;
     background: #407338;
     margin: 0 10px 20px 10px;
 }
@@ -262,6 +267,12 @@ footer a {
 .sightseeing-contents p {
     padding: 10px;
     color: white;
+}
+
+@media (min-width: 826px) {
+    .sightseeing-contents section {
+        width: 350px;
+    }
 }
 
 /* gallery.html Settings Desktop*/
@@ -294,9 +305,10 @@ footer a {
 }
 
 .gallery-image-collection img {
-    width: 350px;
+    width: 100%;
     margin: 0 10px 20px 10px;
 }
+
 #fullPage {
     display: none;
     position: fixed;
@@ -313,6 +325,12 @@ footer a {
 
 .gallery-footer {
     grid-row: 3 / 3;
+}
+
+@media (min-width: 826px) {
+    .gallery-image-collection img {
+        width: 350px;
+    }
 }
 
 /* information.html Settings Desktop*/
@@ -340,16 +358,13 @@ footer a {
 }
 
 .information-travel-contents {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     width: 100%
 }
 
 .information-travel-contents section {
-    width: 35%;
+    width: 100%;
     background: #407338;
-    margin: 0 5%;
+    margin-bottom: 5px;
     display: grid;
     grid-template-rows: 50px auto auto 100px;
 }
@@ -357,12 +372,13 @@ footer a {
 .information-travel-contents h2 {
     display: flex;
     justify-content: center;
-    margin-top: 2.5%;
+    align-items: center;
     color: white;
 }
 
 .information-travel-contents section img {
-    width: 100%
+    width: 75%;
+    margin-left: 12.5%
 }
 
 .information-travel-contents section p {
@@ -372,12 +388,32 @@ footer a {
 }
 
 .information-travel-contents button {
-    width: 90%;
-    height: 80%;
-    margin: 2.5% 5%;
+
     font-family: "Comic Sans MS", sans-serif;
-    font-size: 25px;
+    font-size: 15px;
     background: #85924A;
     border: solid;
-    border-radius: 10px
+    border-radius: 10px;
+    width: 150px;
+    height: 50px;
+    margin: 25px 25px
+}
+
+@media (min-width: 1000px) {
+    .information-travel-contents {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .information-travel-contents section {
+        width: 35%;
+        margin: 0 5%;
+    }
+
+    .information-travel-contents section img {
+        width: 100%;
+        margin: 0
+    }
+
 }
