@@ -36,7 +36,12 @@ nav {
 .navbar-content .nav-links {
     list-style-type: none;
     width: 100%;
-    padding: 20px
+    padding: 20px;
+    transition: 0.3s ease-in-out;
+}
+
+.navbar-content .nav-links:hover {
+    background-color: #85924A;
 }
 
 .navbar-content .logo {
@@ -62,7 +67,12 @@ nav {
 }
 
 #actual-Page {
-    background: #85924A;
+    background: #687236;
+    transition: 0.3s ease-in-out;
+}
+
+#actual-Page:hover {
+    background-color: #85924A;
 }
 
 .titleRiedbach {
@@ -416,4 +426,27 @@ footer a {
         margin: 0
     }
 
+}
+
+.impressum-page {
+    display: grid;
+    grid-template-rows: 100px auto 50px;
+}
+
+.impressum-page header {
+    grid-row: 1 / 1
+}
+
+.impressum-page main {
+    padding: 5%;
+    grid-row: 2 / 2
+}
+
+.impressum-page main p, .impressum-page main h3 {
+    margin-top: 20px
+}
+
+.impressum-page footer {
+    position: fixed;
+    bottom: 0
 }
